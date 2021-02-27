@@ -1,16 +1,25 @@
 ﻿#include <iostream>
 using namespace std;
-void main()
+bool isInArea(double x, double y)
 {
-	double a, b, c;
-	a = 1;c = 0;
+	if (x >= -1 && x <= 1)
+		if (y >= x && y <= x && y >= -1 && y <= 1)
+			return 1;
+		else return 0;
+	else return 0;
+}
+int main()
+{
+	double x, y;
+	bool result;
 	setlocale(LC_ALL, "Rus");
-	cout << "Результат функции при х=1!" << endl;
-	c = (sin(2 * a) + sin(5 * a) - sin(3 * a)) / (cos(a) - cos(3 * a) + cos(5 * a));
-	cout << c << endl;
-	cout << "Введите число!" << endl;
-	cin >> b;
-	cout << "Резултат функции при введённом числе!" << endl;
-	c = (sin(2 * b) + sin(5 * b) - sin(3 * b)) / (cos(b) - cos(3 * b) + cos(5 * b));
-	cout << c << endl;
+	cout << "Введите координату Х=" << endl;
+	cin >> x;
+	cout << "Введите координату Y=" << endl;
+	cin >> y;
+	result=isInArea(x, y);
+	if (result == 1)
+		cout << "Точка находится в области функции";
+	else 
+		cout << "Точка не находится в области функции";
 }
