@@ -1,3 +1,0 @@
-﻿  task2.cpp
-C:\Users\Антон\Desktop\c++\task2\task2\task2.cpp(9,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  task2.vcxproj -> C:\Users\Антон\Desktop\c++\task2\Debug\task2.exe
